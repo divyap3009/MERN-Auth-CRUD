@@ -1,0 +1,118 @@
+/* Prevent scrolling */
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* Container for the entire form */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f7f7f7;
+  padding: 0 20px; /* Prevent horizontal overflow */
+  box-sizing: border-box;
+}
+
+/* Header styling */
+.signup-header {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Form styling */
+.signup-form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+/* Grouping each form input and label */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Label styling */
+.form-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+/* Input field styling */
+.form-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+}
+
+/* Focus state for input fields */
+.form-input:focus {
+  outline: none;
+  border-color: #007BFF;
+}
+
+/* Submit button styling */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #007BFF;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect on the submit button */
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Login prompt text and link */
+.login-prompt {
+  display: block;
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+
+.login-link {
+  color: #007BFF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+
+/* Error message styling */
+.errors-message {
+  color: #ff4d4f; /* Red color to indicate error */
+  font-size: 14px; /* Slightly smaller font */
+  margin-bottom: 15px; /* Space between error message and form */
+  text-align: center; /* Center align error message */
+  font-weight: bold; /* Bold to highlight the error */
+  background-color: #ffe6e6; /* Light red background */
+  padding: 10px; /* Padding around the message */
+  border-radius: 5px; /* Rounded corners */
+}
+

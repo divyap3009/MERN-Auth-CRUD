@@ -1,0 +1,114 @@
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f5f5f5;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  margin-right: 20px;
+  font-size: 24px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+ul li {
+  margin-right: 15px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #555;
+  font-size: 24px;
+}
+
+ul li a:hover {
+  color: #333;
+}
+
+/* Button Styles */
+.logout-btn, .profile-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.logout-btn {
+  background-color: #ff4b4b;
+}
+
+.logout-btn:hover, .profile-btn:hover {
+    background-color: #000913; /* Darker shade on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+/* Profile Card Styles */
+.profile-card {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px; /* Increased width */
+  padding: 30px; /* Increased padding */
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2); /* Deeper shadow for depth */
+  z-index: 1000;
+  text-align: center;
+}
+
+.profile-card h2 {
+  margin-bottom: 15px; /* Increased margin */
+  font-size: 24px; /* Increased font size */
+  color: #333; /* Darker text color */
+}
+
+.profile-card p {
+  font-size: 20px; /* Increased font size */
+  margin: 10px 0;
+  color: #555; /* Softer text color */
+}
+
+/* Close Button in Profile Card */
+.close-btn {
+  position: absolute;
+  top: 15px; /* Adjusted position */
+  right: 15px; /* Adjusted position */
+  font-size: 22px; /* Increased font size */
+  font-weight: bold;
+  cursor: pointer;
+  color: #999;
+}
+
+.close-btn:hover {
+  color: #333;
+}
+
+/* Flexbox for Navbar Right Section */
+.nav-right {
+  display: flex;
+  align-items: center;
+}
