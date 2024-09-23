@@ -8,7 +8,7 @@ const Read = () => {
 
   const getData = async () => {
     try {
-      const response = await fetch("http://localhost:5000/post/read");
+      const response = await fetch("https://mern-auth-crud-api.vercel.app/post/read");
       if (!response.ok) {
         throw new Error("Failed to fetch data");
       }
@@ -25,7 +25,7 @@ const Read = () => {
 
   const handleDelete = async (id) => {
     try {
-      const response = await fetch(`http://localhost:5000/post/delete/${id}`, {
+      const response = await fetch(`https://mern-auth-crud-api.vercel.app/post/delete/${id}`, {
         method: "DELETE",
       });
 

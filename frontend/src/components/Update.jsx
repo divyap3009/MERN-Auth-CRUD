@@ -14,7 +14,7 @@ const Update = () => {
   // Get single user data
   const getSingleUser = async () => {
     try {
-      const response = await fetch(`http://localhost:5000/post/singlepost/${id}`);
+      const response = await fetch(`https://mern-auth-crud-api.vercel.app/post/singlepost/${id}`);
       const result = await response.json();
 
       if (!response.ok) {
@@ -37,7 +37,7 @@ const Update = () => {
     const updatedUser = { name, email, age };
 
     try {
-      const response = await fetch(`http://localhost:5000/post/update/${id}`, {
+      const response = await fetch(`https://mern-auth-crud-api.vercel.app/post/update/${id}`, {
         method: "PATCH",
         body: JSON.stringify(updatedUser),
         headers: {
