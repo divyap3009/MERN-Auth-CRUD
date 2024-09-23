@@ -16,7 +16,7 @@ body {
     flex-wrap: wrap; /* Allow wrapping */
     justify-content: center; /* Center items horizontally */
     align-items: center; /* Center items vertically */
-    height: 60vh; /* Set a height to center content */
+    height: auto; /* Set auto height to allow expansion */
     margin-top: 20px; /* Optional: Add margin above the container */
 }
 
@@ -30,7 +30,7 @@ body {
     flex-direction: column; /* Column layout */
     justify-content: space-between; /* Center content vertically */
     text-align: center; /* Center align text */
-    min-width: 200px; /* Optional: Minimum width to prevent squeezing */
+    min-width: 200px; /* Minimum width to prevent squeezing */
 }
 
 .card:hover {
@@ -113,3 +113,22 @@ body {
     z-index: 1000;
 }
 
+/* Media Queries for Responsive Design */
+
+/* For Tablets */
+@media (max-width: 992px) {
+    .card {
+        flex: 0 0 45%; /* Adjust to show two cards per row */
+    }
+}
+
+/* For Mobile Devices */
+@media (max-width: 768px) {
+    .card {
+        flex: 0 0 90%; /* One card per row */
+    }
+
+    .container {
+        padding: 0 10px; /* Reduce container padding */
+    }
+}
