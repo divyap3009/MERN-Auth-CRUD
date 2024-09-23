@@ -123,7 +123,7 @@ const SignUp = () => {
         </button>
 
         <span className="login-prompt">
-          Already have an account?{" "}
+          Already have an account ?{" "}
           <Link to="/login" className="login-link">
             Login
           </Link>

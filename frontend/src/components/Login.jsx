@@ -89,7 +89,7 @@ const Login = () => {
         </button>
 
         <span className="login-prompt">
-          Does't have an account ?
+          Does't have an account ?{" "}
           <Link to="/signup" className="login-link">
             Signup
           </Link>
