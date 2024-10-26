@@ -1,4 +1,4 @@
-## MERN CRUD Application
+## MERN-Auth-CRUD Application
 
 This repository contains a full-stack **MERN** (MongoDB, Express.js, React.js, Node.js) **CRUD** (Create, Read, Update, Delete) application. Built with modern web development technologies, this application provides a robust foundation for managing data with a user-friendly interface.
 
